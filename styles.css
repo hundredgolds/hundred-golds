@@ -83,6 +83,7 @@ body {
 }
 
 .sidebar ul li a:hover {
+  -webkit-user-drag: none;
   color: #fff;
 }
 
