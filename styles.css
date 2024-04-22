@@ -64,7 +64,6 @@ body {
   background: none;
   border: none;
   color: #ffffff;
-  cursor: pointer;
 }
 
 .sidebar ul {
@@ -80,6 +79,7 @@ body {
 .sidebar ul li a {
   text-decoration: none;
   color: #ddd;
+  -webkit-user-drag: none;
 }
 
 .sidebar ul li a:hover {
