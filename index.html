@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hundred Golds</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+      .content {
+          text-align: center; /* Center the content */
+      }
+
+      img {
+          max-width: 100%; /* Make the image responsive */
+          height: auto; /* Maintain aspect ratio */
+          margin-top: 20px; /* Add some space above the image */
+      }
+  </style>
+</head>
+<body>
+    <div class="app-bar">
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <h2>Hundred Golds</h2>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <button class="closebtn" onclick="toggleSidebar()">×</button>
+        <ul>
+            <li><a href="index.html" onclick="toggleSidebar()">Asosiy</a></li>
+            <li><a href="economics.html" onclick="toggleSidebar()">Iqtisodiyot</a></li>
+            <li><a href="quiz.html" onclick="toggleSidebar()">Qiziqarli Testlar</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+      <h2>Hush kelibsiz</h2>
+      <img src="gif.gif" alt="Image here">
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

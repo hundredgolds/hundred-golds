@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qiziqarli Testlar</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .question {
+        flex: 1;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: x-large;
+      text-align: center;
+      padding: 15px;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+    }
+    .options button {
+      flex: 1;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: large;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background: linear-gradient(90deg, #6616d0, #d615d6);
+      color: #fff;
+    }
+    #result {
+      font-weight: bold;
+      font-size: xx-large;
+      margin-top: 30px;
+      flex: 1;
+      text-align: center;
+      width: 100%;
+    }
+    #score {
+        flex: 1;
+      margin-top: 5px;
+      font-weight: bold;
+      font-size: large;
+      text-align: center;
+      padding: 10px;
+    }
+    #restart {
+      flex: 1;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: large;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background: linear-gradient(90deg, #6616d0, #d615d6);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+    <div class="app-bar">
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <h2>Qiziqarli Testlar</h2>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <button class="closebtn" onclick="toggleSidebar()">×</button>
+        <ul>
+            <li><a href="index.html" onclick="toggleSidebar()">Asosiy</a></li>
+            <li><a href="economics.html" onclick="toggleSidebar()">Iqtisodiyot</a></li>
+            <li><a href="quiz.html" onclick="toggleSidebar()">Qiziqarli Testlar</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("active");
+        }
+    </script>
+    <div id="score"></div>
+    <div id="quiz">
+      <div class="question"></div>
+      <div class="options"></div>
+    </div>
+    <div id="result"></div>
+    <button id="restart" style="display:none;" onclick="restartQuiz()">Qayta boshlash</button>
+
+  <script>
+    let quizData = [];
+
+    async function fetchQuestions() {
+      const response = await fetch('quizzes.json');
+      quizData = await response.json();
+      shuffleArray(quizData); // Shuffle the quiz data
+      loadQuestion();
+    }
+
+    let currentQuestion = 0;
+    let score = 0;
+    let numberQuestion = 1;
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function loadQuestion() {
+      const questionElement = document.querySelector('.question');
+      const optionsElement = document.querySelector('.options');
+      const currentQuizData = quizData[currentQuestion];
+
+      questionElement.textContent = currentQuizData.question;
+      optionsElement.innerHTML = '';
+
+      const shuffledOptions = shuffleArray(currentQuizData.options.slice()); // Make a copy of options array and shuffle it
+      shuffledOptions.forEach((option, index) => {
+        const optionButton = document.createElement('button');
+        optionButton.textContent = option;
+        optionButton.onclick = () => selectOption(option);
+        optionsElement.appendChild(optionButton);
+      });
+
+      document.getElementById('score').textContent = `Hisob: ${score} / ${numberQuestion} / ${quizData.length}`;
+    }
+
+    function selectOption(option) {
+      if (option === quizData[currentQuestion].answer) {
+        score++;
+      }
+      numberQuestion++
+      currentQuestion++;
+
+      if (currentQuestion < quizData.length) {
+        loadQuestion();
+      } else {
+        const resultElement = document.getElementById('result');
+        resultElement.textContent = `${score} / ${quizData.length}`;
+        document.getElementById('quiz').style.display = 'none';
+        document.getElementById('score').style.display = 'none';
+        document.getElementById('restart').style.display = 'block';
+      }
+    }
+
+    function restartQuiz() {
+      currentQuestion = 0;
+      score = 0;
+      numberQuestion = 1;
+      shuffleArray(quizData); // Shuffle the quiz data again
+      document.getElementById('quiz').style.display = 'block';
+      document.getElementById('score').style.display = 'block';
+      document.getElementById('restart').style.display = 'none';
+      document.getElementById('result').textContent = '';
+      loadQuestion();
+    }
+
+    fetchQuestions();
+  </script>
+</body>
+</html>
