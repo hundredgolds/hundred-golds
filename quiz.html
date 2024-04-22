@@ -20,6 +20,7 @@
     .options {
       display: flex;
       flex-direction: column;
+      padding: 10px;
     }
     .options button {
       flex: 1;
@@ -96,7 +97,7 @@
     let quizData = [];
 
     async function fetchQuestions() {
-      const response = await fetch('quizzes.json');
+      const response = await fetch('quiz/datas/qiziqarli10/quizzes.json');
       quizData = await response.json();
       shuffleArray(quizData); // Shuffle the quiz data
       loadQuestion();
