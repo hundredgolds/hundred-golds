@@ -31,7 +31,7 @@
       padding: 15px;
       border: 1px solid #333;
       border-radius: 5px;
-      background: linear-gradient(90deg, #6616d0, #d615d6);
+      background: linear-gradient(90deg, #6212ca, #d811d8);
       color: #fff;
     }
     #result {
@@ -60,7 +60,7 @@
       text-align: center;
       border: 1px solid #333;
       border-radius: 5px;
-      background: linear-gradient(90deg, #6616d0, #d615d6);
+      background: linear-gradient(90deg, #6212ca, #d811d8);
       color: hsl(0, 0%, 100%);
     }
     div {
@@ -73,23 +73,9 @@
 </head>
 <body>
     <div class="app-bar">
-        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <button class="menu-btn" onclick="location.href='quizzes.html'">< Ortga</button>
         <h2>Qiziqarli Testlar</h2>
     </div>
-    <div class="sidebar" id="sidebar">
-        <button class="closebtn" onclick="toggleSidebar()">×</button>
-        <ul>
-            <li><a href="index.html" onclick="toggleSidebar()">Asosiy</a></li>
-            <li><a href="economics.html" onclick="toggleSidebar()">Iqtisodiyot</a></li>
-            <li><a href="quiz.html" onclick="toggleSidebar()">Qiziqarli Testlar</a></li>
-        </ul>
-    </div>
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById("sidebar");
-            sidebar.classList.toggle("active");
-        }
-    </script>
     <div id="score"></div>
     <div id="quiz">
       <div class="question"></div>

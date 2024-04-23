@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.menu-asosiy{
+  display: flex;
+}
 
 .app-bar {
   background-color: #333;
@@ -19,12 +22,19 @@ body {
   border: 1px solid #000000;
   padding: 7px;
   border-radius: 5px;
-  background: linear-gradient(90deg, #6616d0, #d615d6);
+  background: linear-gradient(90deg, #6212ca, #d811d8);
   color: #fff;
   text-decoration: none;
   display: block;
 }
-
+.menu-btns{
+  padding: 7px;
+  border-color: #ffffff;
+  background-color: #333;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 7px;
+}
 .bosqich {
   width: 100%;
   font-weight: bold;
@@ -33,7 +43,7 @@ body {
   padding: 15px;
   border: 1px solid #333;
   border-radius: 5px;
-  background: linear-gradient(90deg, #6616d0, #d615d6);
+  background: linear-gradient(90deg, #6212ca, #d811d8);
   color: #fff;
   text-decoration: none;
   display: block;
