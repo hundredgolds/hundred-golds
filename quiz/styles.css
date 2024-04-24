@@ -35,6 +35,19 @@ body {
   font-weight: bold;
   border-radius: 7px;
 }
+.bosqich {
+  width: 100%;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #6212ca, #d811d8);
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
 
 .sidebar {
   height: 100%;

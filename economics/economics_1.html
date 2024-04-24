@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bosqich 2</title>
+    <title>Bosqich 1</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         .menu-btn {
@@ -18,14 +18,14 @@
 <body>
     <div class="app-bar">
         <button class="menu-btn" onclick="location.href='economics.html'">< Ortga</button>
-        <h2>Bosqich 2</h2>
+        <h2>Bosqich 1</h2>
     </div>
     <div class="content">
         <div id="sentences-container"></div>
     </div>
 
     <script>
-        fetch('economics/datas/bosqich/economics_2.json')
+        fetch('datas/bosqich/economics_1.json')
             .then(response => response.json())
             .then(data => {
                 const sentencesContainer = document.getElementById('sentences-container');
