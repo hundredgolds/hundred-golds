@@ -86,7 +86,7 @@
       <button id="restart" style="display:none;" onclick="restartQuiz()">Qayta boshlash</button>
     </div>
 
-    <div id="customMessage" style="display: none; background-color: #ff0000; padding: 20px; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    <div id="customMessage" style="display: none; position: fixed; top: 0; left: 50%; transform: translateX(-50%); background-color: #ff0000; padding: 15px; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
       <h2 style="color: white;">Xato !</h2>
     </div>
 
@@ -166,7 +166,7 @@
 
     function showMessage() {
   var messageBox = document.getElementById("customMessage");
-  messageBox.style.display = "block";
+  messageBox.style.display = "";
   setTimeout(function(){ messageBox.style.display = "none"; }, 600);
 }
 
