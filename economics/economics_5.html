@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iqtisodiyot tarixi</title>
+    <title>Iqtisodiyot Tarixi</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         .menu-btn {
@@ -18,14 +18,14 @@
 <body bgcolor="white">
     <div class="app-bar">
         <button class="menu-btn" onclick="location.href='economics.html'">< Ortga</button>
-        <h2>Iqtisodiyot tarixi</h2>
+        <h2>Iqtisodiyot Tarixi</h2>
     </div>
     <div class="content">
         <div id="sentences-container"></div>
     </div>
 
     <script>
-        fetch('datas/bosqich/economics_5.json')
+        fetch('datas/qoshimcha/economics_2.json')
             .then(response => response.json())
             .then(data => {
                 const sentencesContainer = document.getElementById('sentences-container');
