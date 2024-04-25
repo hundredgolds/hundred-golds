@@ -86,13 +86,18 @@
       <button id="restart" style="display:none;" onclick="restartQuiz()">Qayta boshlash</button>
     </div>
 
+    <div id="customMessage" style="display: none; background-color: #ff0000; padding: 20px; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+      <h2 style="color: white;">Xato !</h2>
+    </div>
+
   <script>
     let quizData = [];
 
     async function fetchQuestions() {
       const response = await fetch('datas/qiziqarli10/quizzes.json');
       quizData = await response.json();
-      shuffleArray(quizData); // Shuffle the quiz data
+      shuffleArray(quizData[currentQuestion].answer);
+      shuffleArray(quizData);// Shuffle the quiz data
       loadQuestion();
     }
 
@@ -130,6 +135,8 @@
     function selectOption(option) {
       if (option === quizData[currentQuestion].answer) {
         score++;
+      } else {
+        showMessage();
       }
       numberQuestion++
       currentQuestion++;
@@ -156,6 +163,12 @@
       document.getElementById('result').textContent = '';
       loadQuestion();
     }
+
+    function showMessage() {
+  var messageBox = document.getElementById("customMessage");
+  messageBox.style.display = "block";
+  setTimeout(function(){ messageBox.style.display = "none"; }, 450);
+}
 
     fetchQuestions();
   </script>
