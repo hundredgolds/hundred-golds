@@ -94,7 +94,7 @@
     let quizData = [];
 
     async function fetchQuestions() {
-      const response = await fetch('../datas/qiziqarli10/quizzes_1.json');
+      const response = await fetch('../datas/qiziqarli10/quizzes_all.json');
       quizData = await response.json();
       shuffleArray(quizData[currentQuestion].answer);
       shuffleArray(quizData);// Shuffle the quiz data

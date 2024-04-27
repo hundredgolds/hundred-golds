@@ -1,0 +1,203 @@
+[
+    {
+      "question": "Fransiyaning poytaxti qayer?",
+      "options": ["Parij", "London", "Berlin", "Rim"],
+      "answer": "Parij"
+    },
+    {
+      "question": "2 + 2?",
+      "options": ["3", "4", "5", "6"],
+      "answer": "4"
+    },
+    {
+      "question": "Quyosh tizimidagi eng katta sayyora qaysi?",
+      "options": ["Yer", "Yupiter", "Saturn", "Mars"],
+      "answer": "Yupiter"
+    },
+    {
+      "question": "5 + 6?",
+      "options": ["11", "111", "13", "12"],
+      "answer": "11"
+    },
+    {
+      "question": "O'zbekistonning poytaxti qayer?",
+      "options": ["Toshkent", "Samarqand", "O'zbekiston", "Istambul"],
+      "answer": "Toshkent"
+    },
+    {
+      "question": "17 + 38?",
+      "options": ["58", "85", "55", "65"],
+      "answer": "55"
+    },
+    {
+      "question": "Turkiyaning poytaxti qayer?",
+      "options": ["Istambul", "Anqara", "Turkiya", "Toshkent"],
+      "answer": "Anqara"
+    },
+    {
+      "question": "Amerikaning poytaxti qayer?",
+      "options": ["Washington", "Washington D. C.", "Amerika", "Nyu York"],
+      "answer": "Washington D. C."
+    },
+    {
+      "question": "Shvetsariyaning poytaxti qayer?",
+      "options": ["Kito", "Bern", "Berlin", "Shvetsariya"],
+      "answer": "Bern"
+    },
+    {
+      "question": "Chexiyaning poytaxti qayer?",
+      "options": ["Stokgolm", "Moskva", "Tallin", "Praga"],
+      "answer": "Praga"
+    },
+    {
+      "question": "Kumushning kimyoviy belgisi qanday?",
+      "options": ["O", "Ag", "Fe", "Hn"],
+      "answer": "Ag"
+    },
+    {
+      "question": "Oltinning kimyoviy belgisi qanday?",
+      "options": ["O", "Ag", "Fe", "Au"],
+      "answer": "Au"
+    },
+    {
+      "question": "Suvning kimyoviy belgisi qanday?",
+      "options": ["H2O", "CO2", "NaCl", "O2"],
+      "answer": "H2O"
+    },
+    {
+      "question": "Avstraliyaning poytaxti qayer?",
+      "options": ["Kanberra", "Avstaraliya", "Yangi Zellandiya", "Disney"],
+      "answer": "Kanberra"
+    },
+    {
+      "question": "Birinchi jahon urushi qachon tugagan?",
+      "options": ["1918", "1917", "1919", "1916"],
+      "answer": "1918"
+    },
+    {
+      "question": "'Mona Liza'ni kim chizgan?",
+      "options": ["Leonardo da Vinchi", "Vinsent van Gof", "Pablo Pikasso", "Mikelangelo Bonarroti"],
+      "answer": "Leonardo da Vinchi"
+    },
+    {
+      "question": "Matematikadagi pi ning qiymati nimaga teng?",
+      "options": ["3.14159", "3.14161", "3.14158", "3.14162"],
+      "answer": "3.14159"
+    },
+    {
+      "question": "Qaysi sut emizuvchi hayvon ucha oladi?",
+      "options": ["Ko'rshapalak", "Kapalak", "Kabutar", "Laylak"],
+      "answer": "Ko'rshapalak"
+    },
+    {
+      "question": "Yerdagi eng uzun sut emizuvchi hayvon qaysi?",
+      "options": ["Jirafa", "Tuyaqush", "Kit", "Fil"],
+      "answer": "Jirafa"
+    },
+    {
+      "question": "Dunyodagi eng uzun daryo qaysi?",
+      "options": ["Nil daryosi", "Amazon daryosi", "Kongo daryosi", "Volga daryosi"],
+      "answer": "Nil daryosi"
+    },
+    {
+      "question": "Brazilyaning rasmiy davlat tili qaysi?",
+      "options": ["Portugal", "Brazil", "Ingliz", "Fransuz"],
+      "answer": "Portugal"
+    },
+    {
+      "question": "Somon yo'li gallaktikasiga eng yaqin gallaktika qaysi?",
+      "options": ["Andromeda gallaktikasi", "Orion Nebula", "Triangulum gallaktikasi", "Sombrero gallaktikasi"],
+      "answer": "Andromeda gallaktikasi"
+    },
+    {
+      "question": "Kimyoviy elementlar jadvalidagi 'O' nimani anglatadi?",
+      "options": ["Kislorod", "Vodarod", "Azot", "Oltin"],
+      "answer": "Kislorod"
+    },
+    {
+      "question": "Amerikaning birinchi prezidenti kim?",
+      "options": ["Jorj Vashington", "Abraham Linkoln", "Benjamin Franklin", "Tomas Jefferson"],
+      "answer": "Jorj Vashington"
+    },
+    {
+      "question": "144 sonining ildizi nimaga teng?",
+      "options": ["10", "11", "12", "14"],
+      "answer": "12"
+    },
+    {
+      "question": "Yangi Zellandiyaning poytaxti qayer?",
+      "options": ["Vellington", "Yangi Zellandiya", "Avstraliya", "Disney"],
+      "answer": "Vellington"
+    },
+    {
+      "question": "Temirning kimyoviy belgisi qaysi?",
+      "options": ["Fe", "Hn", "H", "O"],
+      "answer": "Fe"
+    },
+    {
+      "question": "Saturnning eng katta yo'ldoshi qaysi?",
+      "options": ["Titan", "Enselad", "Ganimed", "Oy"],
+      "answer": "Titan"
+    },
+    {
+      "question": "Zilzilalarni o'rganadigan fan nima deb ataladi?",
+      "options": ["Seysmologiya", "Paleontologiya", "Biologiya", "Kimyo"],
+      "answer": "Seysmologiya"
+    },
+    {
+      "question": "Qazilmalarni o'rganadigan fan nima deb ataladi?",
+      "options": ["Seysmologiya", "Paleontologiya", "Biologiya", "Kimyo"],
+      "answer": "Paleontologiya"
+    },
+    {
+      "question": "Janubiy Amerikadagi eng katta daryo qaysi?",
+      "options": ["Amazon daryosi", "Nil daryosi", "Kongo daryosi", "Volga daryosi"],
+      "answer": "Amazon daryosi"
+    },
+    {
+      "question": "Qaysi gaz Yer atmosferasining katta qismini tashkil qiladi?",
+      "options": ["Azot", "Kislorod", "Vodarod", "Temir"],
+      "answer": "Azot"
+    },
+    {
+      "question": "Yer maydoni bo'yicha dunyodagi eng kichik davlat qaysi?",
+      "options": ["Vatikan", "Linxteynshteyn", "Monako", "Togo"],
+      "answer": "Vatikan"
+    },
+    {
+      "question": "Jismlarni yer markaziga tortuvchi kuch nima?",
+      "options": ["Gravitatsiya"],
+      "answer": "Gravitatsiya"
+    },
+    {
+      "question": "Tirik organizmlarni o'rganadigan fan qaysi?",
+      "options": ["Biologiya", "Fizika", "Matematika", "Geologiya"],
+      "answer": "Biologiya"
+    },
+    {
+      "question": "Moddaning eng kichik birligi nima?",
+      "options": ["Atom", "Molekula"],
+      "answer": "Atom"
+    },
+    {
+      "question": "Elektr tokining o'lchov birligi nima?",
+      "options": ["Amper", "Volt", "Vatt"],
+      "answer": "Amper"
+    },
+    {
+      "question": "Tirik organizmlarda irsiyatning asosiy birligi nima?",
+      "options": ["Gen", "DNK", "Xromosoma", "Hujayra"],
+      "answer": "Gen"
+    },
+    {
+      "question": "Yerda topilgan eng qattiq modda nima?",
+      "options": ["Olmos", "Grafit", "Oltin", "Kvarts"],
+      "answer": "Olmos"
+    },
+    {
+      "question": "Yerning fizik tuzilishi va moddasini o'rganuvchi fan nima deb ataladi?",
+      "options": ["Geologiya", "Biologiya", "Fizika", "Kimyo"],
+      "answer": "Geologiya"
+    }
+  ]
+  
