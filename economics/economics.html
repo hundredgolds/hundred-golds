@@ -5,24 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iqtisodiyot</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        div {
-            user-select: none;
-        }
-        summary {
-          outline: none;
-          color: #ffffff;
-          font-weight: bold;
-        }
-
-        details{
-            color: white;
-            margin-bottom: 10px;
-          background-color: #6212ca;
-          border-radius: 5px;
-          padding: 10px;
-        }
-    </style>
 </head>
 <body bgcolor="white">
     <div class="app-bar">
@@ -52,12 +34,7 @@
             <li><a href="" onclick="toggleSidebar()">Tillar</a></li>
             <li style="background-color: rgb(17, 17, 17);"><a href="../quiz/quizzes.html" onclick="toggleSidebar()">Testlar</a></li>
     </div>
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById("sidebar");
-            sidebar.classList.toggle("active");
-        }
-    </script>
+    <script src="script.js"></script>
     <div class="content">
         <div>
             <details>

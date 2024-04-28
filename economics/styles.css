@@ -108,3 +108,19 @@ body {
 .content h2 {
   margin-top: 0;
 }
+div {
+  user-select: none;
+}
+summary {
+outline: none;
+color: #ffffff;
+font-weight: bold;
+}
+
+details{
+  color: white;
+  margin-bottom: 10px;
+background-color: #6212ca;
+border-radius: 5px;
+padding: 10px;
+}
