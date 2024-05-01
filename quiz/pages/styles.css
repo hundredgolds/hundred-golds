@@ -1,0 +1,124 @@
+
+.question {
+    flex: 1;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    padding: 15px;
+}
+  .options {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .options button {
+    flex: 1;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #6212ca, #d811d8);
+    color: #fff;
+  }
+  #result {
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 30px;
+    flex: 1;
+    text-align: center;
+    width: 100%;
+  }
+  #score {
+      flex: 1;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+  }
+#restart {
+    padding: 15px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #6212ca, #d811d8);
+    color: hsl(0, 0%, 100%);
+}
+div {
+    user-select: none;
+}
+#forrestart {
+          padding: 15px;
+      }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.menu-asosiy{
+  display: flex;
+}
+
+.app-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-btn {
+  font-weight: bold;
+  font-size: medium;
+  border: 1px solid #000000;
+  padding: 7px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #6212ca, #d811d8);
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+.menu-btns{
+  padding: 7px;
+  border-color: #ffffff;
+  background-color: #333;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 7px;
+}
+.bosqich {
+  width: 100%;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #6212ca, #d811d8);
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.content {
+  margin-left: 0;
+  padding: 10px;
+}
+
+.content section {
+  margin-bottom: 40px;
+}
+
+.content h2 {
+  margin-top: 0;
+}
