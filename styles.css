@@ -64,13 +64,11 @@ body {
 }
 
 .sidebar ul {
-  -webkit-user-drag: none;
   list-style-type: none;
   padding: 0;
 }
 
 .sidebar ul li {
-  -webkit-user-drag: none;
   padding: 10px 20px;
   border-bottom: 1px solid #555;
 }
@@ -79,7 +77,6 @@ body {
   -webkit-user-drag: none;
   text-decoration: none;
   color: #ffffff;
-  -webkit-user-drag: none;
 }
 
 .sidebar ul li a:hover {
