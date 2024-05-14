@@ -166,7 +166,7 @@
     },
     {
       "question": "Jismlarni yer markaziga tortuvchi kuch nima?",
-      "options": ["Gravitatsiya"],
+      "options": ["Gravitatsiya", "To'g'ri javob yo'q"],
       "answer": "Gravitatsiya"
     },
     {

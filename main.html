@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hundred Golds</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .image-button:hover{
+        transform: scale(1.1,1.1);
+        transition: 0.2s ease-in-out;
+      }
+      .asosiy-rasm{
+        -webkit-user-drag: none;
+        user-select: none;
+        box-shadow: 10px 10px 10px orange;
+      }
+
+    </style>
+</head>
+<body bgcolor="white" oncontextmenu="return false;">
+    <div class="app-bar">
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+        <h2>Hundred Golds</h2>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <button class="closebtn" onclick="toggleSidebar()">×</button>
+        <ul>
+            <li style="background-color: rgb(17, 17, 17);"><a href="index.html" onclick="toggleSidebar()" on>Asosiy</a></li>
+            <li style="background-color: rgb(17, 17, 17);"><a href="economics/economics.html" onclick="toggleSidebar()">Iqtisodiyot</a></li>
+            <li><a href="" onclick="toggleSidebar()">Matematika</a></li>
+            <li><a href="" onclick="toggleSidebar()">Fizika</a></li>
+            <li><a href="" onclick="toggleSidebar()">Biologiya</a></li>
+            <li><a href="" onclick="toggleSidebar()">Kimyo</a></li>
+            <li><a href="" onclick="toggleSidebar()">Geografiya</a></li>
+            <li><a href="" onclick="toggleSidebar()">Tarix</a></li>
+            <li><a href="" onclick="toggleSidebar()">Falsafa</a></li>
+            <li><a href="" onclick="toggleSidebar()">Texnologiya</a></li>
+            <li><a href="" onclick="toggleSidebar()">Axborot Texnologiyalari</a></li>
+            <li><a href="" onclick="toggleSidebar()">Tillar</a></li>
+            <li style="background-color: rgb(17, 17, 17);"><a href="quiz/quizzes.html" onclick="toggleSidebar()">Testlar</a></li>
+    </div>
+
+    <div class="content">
+      <img class="asosiy-rasm" src="images/image1.jpg" alt="Image Hundred Golds"><hr>
+      <h2 style="margin-top: 15px;">Mavjud resurslar</h2><hr>
+      <h4>Fanlar</h4>
+      <div>
+        <div class="flex-container">
+          <div class="image-button" onclick="openCategory('economics/economics.html')">
+            <img src="images/image_economics.jpg" alt="Category 1"><hr>
+            <label for="">Iqtisodiyot</label>
+          </div>
+          <div class="image-button">
+            <img src="images/image_maths.jpg" alt="Category 2"><hr>
+            <label for="">Matematika</label>
+          </div>
+          <div class="image-button">
+            <img src="images/image_physics.jpg" alt="Category 3"><hr>
+            <label for="">Fizika</label>
+          </div>
+          <div class="image-button">
+            <img src="images/image_biology.jpg" alt="Category 4"><hr>
+            <label for="">Biologiya</label>
+          </div>
+          <div class="image-button">
+            <img src="images/image_chemistry.jpg" alt="Category 5"><hr>
+            <label for="">Kimyo</label>
+          </div>
+          <div class="image-button">
+            <img src="images/image_geography.jpg" alt="Category 6"><hr>
+            <label for="">Geografiya</label>
+          </div>
+          <div class="image-button">
+            <img src="images/image_history.jpg" alt="Category 7"><hr>
+            <label for="">Tarix</label>
+          </div>
+          <div class="image-button">
+            <img src="images/image_philosophy.jpg" alt="Category 8"><hr>
+            <label for="">Falsafa</label>
+          </div>
+          <!-- Add more image buttons as needed -->
+        </div>
+      </div>
+      <h4>Qo'shimcha</h4>
+      <div>
+        <div class="flex-container">
+          <div class="image-button" onclick="openCategory('quiz/quizzes.html')">
+            <img src="images/image_quizzes.jpg" alt="Category 1"><hr>
+            <label for="">Testlar</label>
+          </div>
+          <div class="image-button">
+            <img src="images/image_technology.jpg" alt="Category 2"><hr>
+            <label for="">Texnologiya</label>
+          </div>
+          <div class="image-button">
+            <img src="images/image_it.jpg" alt="Category 3"><hr>
+            <label for="">Axborot Texnologiyalari</label>
+          </div>
+          <div class="image-button">
+            <img src="images/image_languages.jpg" alt="Category 4"><hr>
+            <label for="">Tillar</label>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>
